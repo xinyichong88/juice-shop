@@ -28,11 +28,19 @@ The challenge is categorized as reflected because the payload is non-persistent 
 ## Challenge 4: API-only XSS
 <iframe src="javascript:alert(`xss`)"> 
 I knew that no UI can be used and should be injected at the backend. 
-Hence, I got an understanding from YouTube and learn the process. So, I used burp suit to inject the command. 
+Hence, I got an understanding from YouTube and learn the process. So, I used burp suite to inject the command. 
 First, I found the api/quantity and send to the repeater. Then, I changed quantity to product and / to the product number I wanted.
 So, I put /1 which shows apple juice. Content-Type: application/json is added above authorization as backend required this parses.
 To check wheter the description can be changed, I first tried out random description.
 And also change the GET to PUT command. Once response can be changed, I only paste the above command.
+
+## Challenge 5: Client-side XSS Protection
+<iframe src="javascript:alert(`xss`)">
+Above command is used to inject malicious script when registering as a new user. I used burp suite when registering new email.
+Then, I find the post part after clicking register. There is a part that showed email address and passwords.
+I tried to change the email that I registered into the above iframe command by changing double quote to single quote. 
+Then, xss alert is prompt but not successfull yet.
+So, I send it to repeater and edit the command by using backslash and send it. Then, challenge solved.
 
 ### Impact
 
