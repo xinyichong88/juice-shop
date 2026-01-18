@@ -27,3 +27,23 @@ At first, I tried to inspect and find any clues but I can't find it. So, I searc
 # Outdated Allowlist
 I inspect a page and go to sources and click main.js. Then, I find the keyword of blockchain as it needs crypto currency address and consists of redirect keyword. Then, I copied the link and paste it in a new tab after the URL 3000/. Then, it brought me to that website.
 
+# Extra coding challenge
+## Scoreboard
+{
+    path: 'score-board', [REMAIN]
+    component: ScoreBoardComponent [DELETE]
+}
+## Confidential Document
+*Remove all these codes*
+/* /ftp directory browsing and file download */
+  app.use('/ftp', serveIndexMiddleware, serveIndex('ftp', { icons: true }))
+  app.use('/ftp(?!/quarantine)/:file', servePublicFiles())
+  app.use('/ftp/quarantine/:file', serveQuarantineFiles())
+## Exposed Metrics
+x app.get('/metrics', metrics.serveMetrics())
+app.get('/metrics', security.isAdmin(), metrics.serveMetrics()) [make admin access only]
+
+x export async function start (readyCallback?: () => void) {
+export async function start (readyCallback: any) {
+
+
