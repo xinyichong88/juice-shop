@@ -17,6 +17,8 @@ This command is used in the search session and iframe was used as most of the ap
 This command is used to inject thrid party video or audio. 
 It is not using javascript but shows HTML vulnerability as iframe was used.
 This will cause showing users harassment video, annoyance and misleading content.
+**The coding challenge: this.searchValue = this.sanitizer.bypassSecurityTrustHtml(queryParam) [INCORRECT]
+this.searchValue = queryParam [CORRECT] DON'T INCLUDE THIS bypassSecurity...
 
 ## Challenge 3: Reflected XSS
 <iframe src="javascript:alert(`xss`)">
