@@ -25,7 +25,13 @@ At first, I tried to inspect and find any clues but I can't find it. So, I searc
 *return s.Njj(c.closeNotification(r, i.shiftKey))
 
 # Outdated Allowlist
-I inspect a page and go to sources and click main.js. Then, I find the keyword of blockchain as it needs crypto currency address and consists of redirect keyword. Then, I copied the link and paste it in a new tab after the URL 3000/. Then, it brought me to that website.
+I inspected a page and go to sources and click main.js. Then, I find the keyword of blockchain as it needs crypto currency address and consists of redirect keyword. Then, I copied the link and paste it in a new tab after the URL 3000/. Then, it brought me to that website.
+
+# Web3-Sandbox
+I inspected a page then go to style editior and search for web3, then choose the path that has web3-sandbox and change it at the url there.
+
+Web3-Sandbox usually refers to safe and isolated practive environment provided by OWASP where users can experiment web3 technologies such as blockchain, smart contracts, wallet and privacy key misues.
+
 
 # Extra coding challenge
 ## Scoreboard
